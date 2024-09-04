@@ -62,7 +62,7 @@ with body:
 
     with st.expander("Global Economic and Population EDA", expanded=True):
         st.write("This video demonstrates the Exploratory Data Analysis process.")
-        st.video("videos/EDA(1).mp4", format="video/mp4", start_time=0, loop=True, autoplay=True, muted=True)
+        st.video("EDA(1).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
         st.write("""
         **Global Economic and Population Metrics Analyzer**  
         *Technologies: Pandas, NumPy, Matplotlib*  
@@ -83,7 +83,7 @@ with body:
     with st.expander("Sentiment Analysis Web App", expanded=True):
         st.write(
             "I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
-        st.video("videos/EDA(2).mp4", format="video/mp4", start_time=0, loop=True, autoplay=True, muted=True)
+        st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
         st.write("""
         **Sentiment Analysis Web App Project**  
         *Technologies & Model: NLP, Python DistilBERT*
