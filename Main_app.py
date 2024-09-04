@@ -1,5 +1,4 @@
 import streamlit as st
-import webbrowser
 
 # Set page configuration
 st.set_page_config(page_title="My Data Science Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
@@ -15,8 +14,7 @@ kaggle_url = "https://www.kaggle.com/abhinavkatiyan"
 
 # Button display function using Streamlit native buttons
 def display_button(url, text):
-    if st.button(text):
-        webbrowser.open_new_tab(url)
+    st.markdown(f'<a href="{url}" target="_blank" class="button">{text}</a>', unsafe_allow_html=True)
 
 with body:
     # Home Section
@@ -73,12 +71,10 @@ with body:
         """)
 
         # GitHub button
-        if st.button("GitHub", key="eda1_github"):
-            webbrowser.open_new_tab("https://github.com/abhinav-Katiyan/Economic-and-Population-Comparison-Tool")
+        st.markdown('<a href="https://github.com/abhinav-Katiyan/Economic-and-Population-Comparison-Tool" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
 
         # Web App button
-        if st.button("Web App", key="eda1_webapp"):
-            webbrowser.open_new_tab("https://economic-and-population-comparison-tool.streamlit.app/")
+        st.markdown('<a href="https://economic-and-population-comparison-tool.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
 
     with st.expander("Sentiment Analysis Web App", expanded=True):
         st.write(
@@ -96,12 +92,10 @@ with body:
         - **Text Classification:** Engineered a text classification feature utilizing advanced sentiment analysis techniques, achieving a 95% accuracy rate in categorizing user feedback, thereby streamlining the review process.
         """)
 
-        if st.button("GitHub", key="eda2_github"):
-            webbrowser.open_new_tab("https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App")
+        st.markdown('<a href="https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
 
         # Web App button
-        if st.button("Web App", key="eda2_webapp"):
-            webbrowser.open_new_tab("https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/")
+        st.markdown('<a href="https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
 
     # Power BI Report Section
     st.subheader("Power BI Reports", divider='rainbow')
