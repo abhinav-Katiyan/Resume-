@@ -153,7 +153,7 @@ with body:
 
     st.subheader("Contact", divider='rainbow')
     st.write("""
-    **Email:** abhinavkatiyan21@gmail.com.com    
+    **Email:** abhinavkatiyan21@gmail.com 
     **Contact:** +91 6388845388
     """)
 
