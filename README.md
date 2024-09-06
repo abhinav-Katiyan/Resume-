@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Science Portfolio Website</title>
 </head>
 <body>
     <h1>Data Science Portfolio Website</h1>
@@ -25,7 +24,11 @@
         <li><strong>Install Dependencies</strong>: Ensure you have Streamlit installed. You can install it using pip:
             <pre><code>pip install streamlit</code></pre>
         </li>
-        <li><strong>Run the App</strong>: Save the code to a file, for example, <code>app.py</code>. Run the app using Streamlit:
+        <li><strong>Clone the Repository</strong>: Use Git Bash to clone the repository to your local machine. Open Git Bash and run the following command:
+            <pre><code>git clone https://github.com/your-username/your-repository.git</code></pre>
+        </li>
+        <li><strong>Run the App</strong>: Navigate to the project directory and run the app using Streamlit:
+            <pre><code>cd your-repository</code></pre>
             <pre><code>streamlit run app.py</code></pre>
         </li>
         <li><strong>Customize the Code</strong>:
@@ -35,10 +38,10 @@
                 <li><strong>Power BI Reports</strong>: Embed your own Power BI report URLs in the iframes.</li>
             </ul>
         </li>
-        <li><strong>GitHub Repository</strong>: You can find the code and instructions for customization in my GitHub repository: <a href="[GitHub](https://github.com/abhinav-Katiyan)">Your GitHub Link</a>.</li>
+        <li><strong>GitHub Repository</strong>: You can find the code and instructions for customization in my GitHub repository: <a href="[Git Hub](https://github.com/abhinav-Katiyan)">Your GitHub Link</a>.</li>
     </ol>
 
-<h2>Code Breakdown</h2>
+ <h2>Code Breakdown</h2>
     <ul>
         <li><strong>Page Configuration</strong>: Sets up the page title, icon, layout, and sidebar state.</li>
         <li><strong>Columns</strong>: Defines the layout structure with margins and main content.</li>
