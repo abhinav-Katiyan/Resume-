@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio Website</title>
+<title>Data Science Portfolio Website</title>
 </head>
 <body>
     <h1>Data Science Portfolio Website</h1>
@@ -35,7 +35,7 @@
                 <li><strong>Power BI Reports</strong>: Embed your own Power BI report URLs in the iframes.</li>
             </ul>
         </li>
-        <li><strong>GitHub Repository</strong>: You can find the code and instructions for customization in my GitHub repository: <a href="Your GitHub Link">Your GitHub Link</a>.</li>
+        <li><strong>GitHub Repository</strong>: You can find the code and instructions for customization in my GitHub repository: <a href="[GitHub](https://github.com/abhinav-Katiyan)">Your GitHub Link</a>.</li>
     </ol>
 
 <h2>Code Breakdown</h2>
