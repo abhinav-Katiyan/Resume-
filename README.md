@@ -8,9 +8,9 @@
 <body>
     <h1>Data Science Portfolio Website</h1>
 
-    <p>Welcome to my Data Science Portfolio website! This site showcases my projects, skills, and live PowerBI reports, and it’s built using Streamlit. Below is a guide to understanding and customizing the code.</p>
+<p>Welcome to my Data Science Portfolio website! This site showcases my projects, skills, and live PowerBI reports, and it’s built using Streamlit. Below is a guide to understanding and customizing the code.</p>
 
-    <h2>Features</h2>
+<h2>Features</h2>
     <ul>
         <li><strong>Homepage</strong>: Introduces me and provides links to my resume, LinkedIn, GitHub, and Kaggle profiles.</li>
         <li><strong>Overview</strong>: Describes my data science expertise, including EDA, predictive modeling, data visualization, statistical analysis, NLP, and machine learning.</li>
@@ -20,7 +20,7 @@
         <li><strong>Contact Information</strong>: Provides my contact details for networking and opportunities.</li>
     </ul>
 
-    <h2>Getting Started</h2>
+<h2>Getting Started</h2>
     <ol>
         <li><strong>Install Dependencies</strong>: Ensure you have Streamlit installed. You can install it using pip:
             <pre><code>pip install streamlit</code></pre>
@@ -38,7 +38,7 @@
         <li><strong>GitHub Repository</strong>: You can find the code and instructions for customization in my GitHub repository: <a href="Your GitHub Link">Your GitHub Link</a>.</li>
     </ol>
 
-    <h2>Code Breakdown</h2>
+<h2>Code Breakdown</h2>
     <ul>
         <li><strong>Page Configuration</strong>: Sets up the page title, icon, layout, and sidebar state.</li>
         <li><strong>Columns</strong>: Defines the layout structure with margins and main content.</li>
@@ -47,6 +47,6 @@
         <li><strong>Skills Section</strong>: Displays a list of skills with buttons.</li>
     </ul>
 
-    <p>Feel free to modify the code to fit your own portfolio needs. If you have any questions or need assistance, don’t hesitate to reach out!</p>
+<p>Feel free to modify the code to fit your own portfolio needs. If you have any questions or need assistance, don’t hesitate to reach out!</p>
 </body>
 </html>
