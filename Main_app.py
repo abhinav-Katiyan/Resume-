@@ -37,7 +37,7 @@ with body:
 
     with col3:
         st.markdown(
-            '<img src="https://media.licdn.com/dms/image/v2/D5603AQEJGss-oF5RkA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711951217355?e=1730937600&v=beta&t=X73HPQJ-4vxGrShStI8a_a8XUsn4VP-Y2MtaXRFLVIg" class="profile-photo" width="360">',
+            '<img src="https://storage.googleapis.com/kaggle-avatars/images/12609714-kg.jpg?t=2024-06-07-13-10-03&quot" class="profile-photo" width="360">',
             unsafe_allow_html=True)
 
     # Overview Section
