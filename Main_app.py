@@ -37,8 +37,9 @@ with body:
 
     with col3:
         st.markdown(
-            '<img src="https://storage.googleapis.com/kaggle-avatars/images/12609714-kg.jpg?t=2024-06-07-13-10-03&quot" class="profile-photo" width="360">',
-            unsafe_allow_html=True)
+            '<img src="https://storage.googleapis.com/kaggle-avatars/images/12609714-kg.jpg?t=2024-06-07-13-10-03&quot" class="profile-photo" width="360">', 
+            unsafe_allow_html=True
+        )
 
     # Overview Section
     st.subheader("Overview of My Data Science Expertise", divider='rainbow')
@@ -76,53 +77,52 @@ with body:
         # Web App button
         st.markdown('<a href="https://economic-and-population-comparison-tool.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
 
-   with st.expander("Sentiment Analysis Web App", expanded=True):
-    st.write(
-        "I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
-    
-    # Displaying video in the app
-    st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
-    
-    # Description of the project
-    st.write("""
-    **Sentiment Analysis Web App Project**  
-    *Technologies & Model: NLP, Python DistilBERT*
+    with st.expander("Sentiment Analysis Web App", expanded=True):
+        st.write(
+            "I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
+        
+        # Displaying video in the app
+        st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
+        
+        # Description of the project
+        st.write("""
+        **Sentiment Analysis Web App Project**  
+        *Technologies & Model: NLP, Python DistilBERT*
 
-    - **Sentiment Analysis:** Developed a web app that performs sentiment analysis on user-input text and CSV files. The app analyzes the sentiment of the text and identifies the most frequently repeated words, providing valuable insights into user opinions and trends.
+        - **Sentiment Analysis:** Developed a web app that performs sentiment analysis on user-input text and CSV files. The app analyzes the sentiment of the text and identifies the most frequently repeated words, providing valuable insights into user opinions and trends.
 
-    - **Model Customization:** Customized and trained the DistilBERT model for sentiment analysis, leading to a 30% improvement in detecting customer satisfaction levels, which informed strategic decisions for product enhancements.
+        - **Model Customization:** Customized and trained the DistilBERT model for sentiment analysis, leading to a 30% improvement in detecting customer satisfaction levels, which informed strategic decisions for product enhancements.
 
-    - **Text Classification:** Engineered a text classification feature utilizing advanced sentiment analysis techniques, achieving a 95% accuracy rate in categorizing user feedback, thereby streamlining the review process.
-    """)
+        - **Text Classification:** Engineered a text classification feature utilizing advanced sentiment analysis techniques, achieving a 95% accuracy rate in categorizing user feedback, thereby streamlining the review process.
+        """)
 
-    # GitHub and Web App buttons
-    st.markdown('<a href="https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
-    st.markdown('<a href="https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
+        # GitHub and Web App buttons
+        st.markdown('<a href="https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
+        st.markdown('<a href="https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
 
-# Power BI Report Section
-st.subheader("Power BI Reports", divider='rainbow')
+    # Power BI Report Section
+    st.subheader("Power BI Reports", divider='rainbow')
 
-with st.expander("Atliq Financial Overview", expanded=True):
-    st.write("Another insightful Power BI report showcasing additional analyses.")
-    
-    # Embedding the Power BI report using iframe
-    st.markdown("""
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-        """, unsafe_allow_html=True)
-    
-    # Detailed report analysis with key points
-    st.write("""
-    **Atliq Financial Performance: Key Metrics Overview**  
-    *Technologies: Power BI*  
+    with st.expander("Atliq Financial Overview", expanded=True):
+        st.write("Another insightful Power BI report showcasing additional analyses.")
+        
+        # Embedding the Power BI report using iframe
+        st.markdown("""
+            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+            """, unsafe_allow_html=True)
+        
+        # Detailed report analysis with key points
+        st.write("""
+        **Atliq Financial Performance: Key Metrics Overview**  
+        *Technologies: Power BI*  
 
-    - **Net Sales**: Represents total revenue generated before deducting expenses.
-    - **Gross Margin %**: A measure of profitability that shows the percentage of sales revenue remaining after covering direct production costs.
-    - **Net Profit %**: Indicates the percentage of revenue that remains as profit after all expenses have been deducted.
-    - **Market Share %**: Reflects Atliq's share of the overall market within its industry.
-    - **By Fiscal Year**: The data is segmented by fiscal years to observe annual trends and performance.
-    """)
-
+        - **Net Sales**: Represents total revenue generated before deducting expenses.
+        - **Gross Margin %**: A measure of profitability that shows the percentage of sales revenue remaining after covering direct production costs.
+        - **Net Profit %**: Indicates the percentage of revenue that remains as profit after all expenses have been deducted.
+        - **Market Share %**: Reflects Atliq's share of the overall market within its industry.
+        - **By Fiscal Year**: The data is segmented by fiscal years to observe annual trends and performance.
+        """)
 
     # Skills Section
     st.subheader("Skills & Expertise", divider='rainbow')
@@ -140,6 +140,6 @@ with st.expander("Atliq Financial Overview", expanded=True):
 
     st.subheader("Contact", divider='rainbow')
     st.write("""
-    **Email:** abhinavkatiyan21@gmail.com 
+    **Email:** abhinavkatiyan21@gmail.com  
     **Contact:** +91 6388845388
     """)
