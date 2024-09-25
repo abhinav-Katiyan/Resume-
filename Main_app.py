@@ -102,25 +102,25 @@ with body:
 
 
    with st.expander("Atliq Financial Overview", expanded=True):
-    st.write("Another insightful Power BI report showcasing additional analyses.")
+        st.write("Another insightful Power BI report showcasing additional analyses.")
+        
+        # Embedding the Power BI report using iframe
+        st.markdown("""
+            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+            """, unsafe_allow_html=True)
+        
+        # Detailed report analysis with key points
+        st.write("""
+        **Atliq Financial Performance: Key Metrics Overview**  
+        *Technologies: Power BI*  
     
-    # Embedding the Power BI report using iframe
-    st.markdown("""
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-        """, unsafe_allow_html=True)
-    
-    # Detailed report analysis with key points
-    st.write("""
-    **Atliq Financial Performance: Key Metrics Overview**  
-    *Technologies: Power BI*  
-
-    - **Net Sales**: Represents total revenue generated before deducting expenses.
-    - **Gross Margin %**: A measure of profitability that shows the percentage of sales revenue remaining after covering direct production costs.
-    - **Net Profit %**: Indicates the percentage of revenue that remains as profit after all expenses have been deducted.
-    - **Market Share %**: Reflects Atliq's share of the overall market within its industry.
-    - **By Fiscal Year**: The data is segmented by fiscal years to observe annual trends and performance.
-    """)
+        - **Net Sales**: Represents total revenue generated before deducting expenses.
+        - **Gross Margin %**: A measure of profitability that shows the percentage of sales revenue remaining after covering direct production costs.
+        - **Net Profit %**: Indicates the percentage of revenue that remains as profit after all expenses have been deducted.
+        - **Market Share %**: Reflects Atliq's share of the overall market within its industry.
+        - **By Fiscal Year**: The data is segmented by fiscal years to observe annual trends and performance.
+        """)
 
 
     # Skills Section
