@@ -116,20 +116,27 @@ with body:
         - **Segment Analysis:** Examined key customer segments and spending patterns to inform simplified marketing strategies, leading to increased spending by 15% among the 25-34 age group and enhanced engagement by 25% among IT professionals, driving significant revenue growth.
         """)
 
-    with st.expander("Hotel Insights Report", expanded=True):
-        st.write("Another insightful Power BI report showcasing additional analyses.")
-        st.markdown("""
-            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTVjOTAxZWQtZjU2NC00YjY1LWJkZGQtYTlhMTdjNzVjNDczIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-            """, unsafe_allow_html=True)
-        st.write("""
-        **Hotel Insights Report Analysis**  
-        *Technologies: Power BI*  
+   with st.expander("Atliq Financial Overview", expanded=True):
+    st.write("Another insightful Power BI report showcasing additional analyses.")
+    
+    # Embedding the Power BI report using iframe
+    st.markdown("""
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+        """, unsafe_allow_html=True)
+    
+    # Detailed report analysis with key points
+    st.write("""
+    **Atliq Financial Performance: Key Metrics Overview**  
+    *Technologies: Power BI*  
 
-        - **Guest Preferences Analysis:** Analyzed over 10,000 data points for a hotel's guest experience management system. Focused on guest preferences and booking patterns, identifying key trends that resulted in a 15% increase in repeat bookings within the first quarter.
+    - **Net Sales**: Represents total revenue generated before deducting expenses.
+    - **Gross Margin %**: A measure of profitability that shows the percentage of sales revenue remaining after covering direct production costs.
+    - **Net Profit %**: Indicates the percentage of revenue that remains as profit after all expenses have been deducted.
+    - **Market Share %**: Reflects Atliq's share of the overall market within its industry.
+    - **By Fiscal Year**: The data is segmented by fiscal years to observe annual trends and performance.
+    """)
 
-        - **Segment Analysis:** Investigated key guest segments and spending behaviors to refine marketing strategies. This analysis led to a 15% increase in average spending among the 25-34 age group and a 25% boost in engagement from business travelers, significantly enhancing revenue growth and customer satisfaction.
-        """)
 
     # Skills Section
     st.subheader("Skills & Expertise", divider='rainbow')
