@@ -100,21 +100,6 @@ with body:
     # Power BI Report Section
     st.subheader("Power BI Reports", divider='rainbow')
 
-    with st.expander("Credit Card Users Analysis Report", expanded=True):
-        st.write("A comprehensive and live sales analysis report created using Power BI.")
-        st.markdown("""
-            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNDY0YTQ2YjQtMzc4Ny00NmVlLWE2N2YtMmUzMzYwYjVmYzkxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-            """, unsafe_allow_html=True)
-        st.write("""
-        **Credit Card Users Analysis**  
-        *Technologies: Power BI*  
-        *Type: Dashboard*
-
-        - **Customer Preferences Analysis:** Analyzed over 10,000 data points for a bank's new credit card launch, focusing on customer preferences. Identified trends that led to a 15% increase in targeted sign-ups within the first quarter.
-
-        - **Segment Analysis:** Examined key customer segments and spending patterns to inform simplified marketing strategies, leading to increased spending by 15% among the 25-34 age group and enhanced engagement by 25% among IT professionals, driving significant revenue growth.
-        """)
 
    with st.expander("Atliq Financial Overview", expanded=True):
     st.write("Another insightful Power BI report showcasing additional analyses.")
