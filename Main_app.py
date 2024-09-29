@@ -24,10 +24,11 @@ with body:
 
     with col1:
         st.write("""
-        Hey! I'm Abhinav Sharma, a Data Scientist with a passion for transforming data into actionable insights. My expertise spans across various domains including predictive modeling, data visualization, and statistical analysis.
+        Hi there! I'm Abhinav Sharma, a student with a passion for data and a goal to become a skilled Data Analyst. I enjoy turning raw data into meaningful insights and working with data visualization, statistical analysis, and problem-solving.
 
-        Explore my portfolio to see some of my key projects and find out more about the tools and technologies I use.
+        Take a look at my portfolio to explore some of my projects and learn more about the tools and techniques I'm using along the way!
         """)
+
 
         # Display buttons using Streamlit native buttons
         display_button(resume_url, "Resume")
@@ -104,29 +105,29 @@ with body:
     # Power BI Report Section
     st.subheader("Power BI Reports", divider='rainbow')
 
-    with st.expander("Atliq Financial Overview", expanded=True):
-        st.write("Another insightful Power BI report showcasing additional analyses.")
-        
-        # Embedding the Power BI report using iframe
-        st.markdown("""
-            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-            """, unsafe_allow_html=True)
-        
-        # Detailed report analysis with key points
-        st.write("""
-        **Atliq Financial Performance: Key Metrics Overview**  
-        *Technologies: Power BI*  
+   with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
+    st.write("Detailed Power BI report highlighting Atliq's financial performance with key insights and trends.")
 
-        - **Net Sales**: Represents total revenue generated before deducting expenses.
-        - **Gross Margin %**: A measure of profitability that shows the percentage of sales revenue remaining after covering direct production costs.
-        - **Net Profit %**: Indicates the percentage of revenue that remains as profit after all expenses have been deducted.
-        - **Market Share %**: Reflects Atliq's share of the overall market within its industry.
-        - **By Fiscal Year**: The data is segmented by fiscal years to observe annual trends and performance.
-        """)
+    # Embedding the Power BI report using iframe
+    st.markdown("""
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+        """, unsafe_allow_html=True)
+
+    # Detailed report analysis with key points
+    st.write("""
+    **Atliq Financial Performance: Key Metrics Overview**  
+    *Technologies: Power BI*  
+
+    - **Net Sales**: Total revenue generated before deducting expenses.
+    - **Gross Margin %**: Profitability measure showing the percentage of sales revenue remaining after covering production costs.
+    - **Net Profit %**: Percentage of revenue left as profit after all expenses.
+    - **Market Share %**: Atliq's industry market share percentage.
+    - **By Fiscal Year**: Data segmented by fiscal years to identify trends and performance over time.
+    """)
 
     with st.expander("Credit Card Analysis ", expanded=True):
-        st.write("Another insightful Power BI report showcasing additional analyses.")
+        st.write("Comprehensive Power BI Dashboard Unveiling Key Insights on Credit Card Usage Patterns and Opportunities for Optimization")
         
         # Embedding the Power BI report using iframe
         st.markdown("""
