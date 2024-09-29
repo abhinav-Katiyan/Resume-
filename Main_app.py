@@ -20,13 +20,21 @@ def display_button(url, text):
 col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
 # Content for the left column
-with col1:
-    st.subheader("**Hello! I'm Abhinav Sharma**",divider='rainbow') 
-    st.write("""
-    I'm a student passionate about data, aiming to become a skilled Data Analyst. I love transforming raw data into meaningful insights through data visualization, statistical analysis, and problem-solving.
+with col3:
+    st.markdown(
+        """
+        <style>
+            .profile-photo {
+                border-radius: 50%;  /* Makes the image round */
+                width: 360px;        /* Set the width */
+                height: 360px;       /* Set the height to maintain the aspect ratio */
+            }
+        </style>
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQGxfctLmE8DQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727202726874?e=1733356800&v=beta&t=fdzeagmU8UQNrmWtvTNu3zyKWDPuAmbp3nTr49nUkGk" class="profile-photo">
+        """,
+        unsafe_allow_html=True
+    )
 
-    Explore my portfolio to discover my projects and the tools and techniques I'm utilizing!
-    """)
 
 
     # Display buttons for external links
