@@ -81,7 +81,7 @@ with body:
 
     with st.expander("Sentiment Analysis Web App", expanded=True):
         st.write(
-            "I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
+        "I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
         
         # Displaying video in the app
         st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
@@ -105,26 +105,26 @@ with body:
     # Power BI Report Section
     st.subheader("Power BI Reports", divider='rainbow')
 
-   with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
-    st.write("Detailed Power BI report highlighting Atliq's financial performance with key insights and trends.")
+    with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
+        st.write("Detailed Power BI report highlighting Atliq's financial performance with key insights and trends.")
 
     # Embedding the Power BI report using iframe
-    st.markdown("""
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-        """, unsafe_allow_html=True)
+        st.markdown("""
+            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+            """, unsafe_allow_html=True)
 
     # Detailed report analysis with key points
-    st.write("""
-    **Atliq Financial Performance: Key Metrics Overview**  
-    *Technologies: Power BI*  
-
-    - **Net Sales**: Total revenue generated before deducting expenses.
-    - **Gross Margin %**: Profitability measure showing the percentage of sales revenue remaining after covering production costs.
-    - **Net Profit %**: Percentage of revenue left as profit after all expenses.
-    - **Market Share %**: Atliq's industry market share percentage.
-    - **By Fiscal Year**: Data segmented by fiscal years to identify trends and performance over time.
-    """)
+        st.write("""
+        **Atliq Financial Performance: Key Metrics Overview**  
+        *Technologies: Power BI*  
+    
+        - **Net Sales**: Total revenue generated before deducting expenses.
+        - **Gross Margin %**: Profitability measure showing the percentage of sales revenue remaining after covering production costs.
+        - **Net Profit %**: Percentage of revenue left as profit after all expenses.
+        - **Market Share %**: Atliq's industry market share percentage.
+        - **By Fiscal Year**: Data segmented by fiscal years to identify trends and performance over time.
+        """)
 
     with st.expander("Credit Card Analysis ", expanded=True):
         st.write("Comprehensive Power BI Dashboard Unveiling Key Insights on Credit Card Usage Patterns and Opportunities for Optimization")
