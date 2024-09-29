@@ -19,23 +19,25 @@ def display_button(url, text):
 # Layout for the main content
 col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
+# Content for the left column
+with col1:
+    st.write("""
+    **Hello! I'm Abhinav Sharma**  
+    I'm a student passionate about data, aiming to become a skilled Data Analyst. I love transforming raw data into meaningful insights through data visualization, statistical analysis, and problem-solving.
+    
+    Explore my portfolio to discover my projects and the tools and techniques I'm utilizing!
+    """)
 
-# Display buttons for external links
-display_button(resume_url, "Resume")
-display_button(linkedin_url, "LinkedIn")
-display_button(github_url, "GitHub")
-display_button(kaggle_url, "Kaggle")
-
-
- 
-
-
-   
+    # Display buttons for external links
+    display_button(resume_url, "Resume")
+    display_button(linkedin_url, "LinkedIn")
+    display_button(github_url, "GitHub")
+    display_button(kaggle_url, "Kaggle")
 
 # Content for the right column
 with col3:
     st.markdown(
-        '<img src="https://media.licdn.com/dms/image/v2/D5603AQGxfctLmE8DQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727202726874?e=1733356800&v=beta&t=fdzeagmU8UQNrmWtvTNu3zyKWDPuAmbp3nTr49nUkGk" class="profile-photo" width="360">',
+        '<img src="https://storage.googleapis.com/kaggle-avatars/images/12609714-kg.jpg?t=2024-06-07-13-10-03" class="profile-photo" width="360">',
         unsafe_allow_html=True
     )
 
@@ -154,4 +156,5 @@ for i in range(0, len(skills), 3):
     for j, skill in enumerate(skills[i:i + 3]):
         cols[j].button(skill)
 
-
+# Footer Section
+st.markdown("<h6 style='text-align: center;'>© 2024 Abhinav Sharma. All Rights Reserved.</h6>", unsafe_allow_html=True)
