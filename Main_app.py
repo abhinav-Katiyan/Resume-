@@ -1,4 +1,4 @@
-import streamlit as st
+    import streamlit as st
     
     # Set the initial page configuration
     st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
