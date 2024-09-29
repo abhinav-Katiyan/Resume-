@@ -7,7 +7,7 @@ st.set_page_config(page_title="Hobby Projects Portfolio", page_icon="🕸️", l
 margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
 
 # Define URLs for buttons
-resume_url = "https://drive.google.com/file/d/1IOa-IL6LcXj9894XPCvXwchrKY5yYU10/view?usp=sharing"
+resume_url = "https://drive.google.com/file/d/187gx-s8mO4wM_5M8kVIVUB785okPXJpK/view?usp=sharing"
 linkedin_url = "https://linkedin.com/in/abhinav-sharma-work21/"
 github_url = "https://github.com/abhinav-Katiyan"
 kaggle_url = "https://www.kaggle.com/abhinavkatiyan"
