@@ -19,12 +19,15 @@ def display_button(url, text):
 # Layout for the main content
 col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
- # Display buttons for external links
-    display_button(resume_url, "Resume")
-    display_button(linkedin_url, "LinkedIn")
-    display_button(github_url, "GitHub")
-    display_button(kaggle_url, "Kaggle")
 
+# Display buttons for external links
+display_button(resume_url, "Resume")
+display_button(linkedin_url, "LinkedIn")
+display_button(github_url, "GitHub")
+display_button(kaggle_url, "Kaggle")
+
+
+ 
 
 
    
