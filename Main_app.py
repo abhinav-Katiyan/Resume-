@@ -26,7 +26,7 @@ with col1:
     st.write("I'm a student passionate about data, aiming to become a skilled Data Analyst. I love transforming raw data into meaningful insights through data visualization, statistical analysis, and problem-solving.
     
     Explore my portfolio to discover my projects and the tools and techniques I'm utilizing!
-    "")
+    """")
 
     # Display buttons for external links
     display_button(resume_url, "Resume")
