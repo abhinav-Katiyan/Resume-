@@ -1,23 +1,23 @@
 import streamlit as st
-
-# Set the initial page configuration
-st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
-
-# Define columns
-margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
-
-# Define URLs for buttons
-resume_url = "https://drive.google.com/file/d/1IFtuPv36fZb0AI9j3Rt9Argh9vEuzwem/view?usp=sharing"
-linkedin_url = "https://linkedin.com/in/abhinav-sharma-work21/"
-github_url = "https://github.com/abhinav-Katiyan"
-kaggle_url = "https://www.kaggle.com/abhinavkatiyan"
-
-# Button display function using Streamlit native buttons
-def display_button(url, text):
-    st.markdown(f'<a href="{url}" target="_blank" class="button">{text}</a>', unsafe_allow_html=True)
-
-# Define columns for layout
-col1, col2, col3 = st.columns([1.3, 0.2, 1])
+    
+    # Set the initial page configuration
+    st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
+    
+    # Define columns
+    margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
+    
+    # Define URLs for buttons
+    resume_url = "https://drive.google.com/file/d/1IFtuPv36fZb0AI9j3Rt9Argh9vEuzwem/view?usp=sharing"
+    linkedin_url = "https://linkedin.com/in/abhinav-sharma-work21/"
+    github_url = "https://github.com/abhinav-Katiyan"
+    kaggle_url = "https://www.kaggle.com/abhinavkatiyan"
+    
+    # Button display function using Streamlit native buttons
+    def display_button(url, text):
+        st.markdown(f'<a href="{url}" target="_blank" class="button">{text}</a>', unsafe_allow_html=True)
+    
+    # Define columns for layout
+    col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
 
     with col1:
