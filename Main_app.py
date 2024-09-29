@@ -6,51 +6,27 @@ import time
 
 import streamlit as st
 
-# Set initial page configuration
+import streamlit as st
+
+# Set the initial page configuration
 st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
 
-# Custom HTML and CSS for the animation effect
-st.markdown("""
-    <style>
-    .cut-text {
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;
-        transition: width 0.5s ease;
-        width: 200px; /* Adjust based on the original title's width */
-    }
-    .cut-text.change {
-        width: 0; /* Cut to 0 width */
-    }
-    .new-text {
-        display: inline-block;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-    .new-text.show {
-        opacity: 1;
-    }
-    </style>
+# Create a session state variable to toggle between titles
+if 'title_changed' not in st.session_state:
+    st.session_state.title_changed = False
 
-    <div>
-        <h1 id="dynamic-title">
-            <span class="cut-text" id="cut-text">Data Analytics Portfolio</span>
-            <span class="new-text" id="new-text">Hobby Projects</span>
-        </h1>
-    </div>
+# Function to toggle the title
+def toggle_title():
+    st.session_state.title_changed = not st.session_state.title_changed
 
-    <script>
-    const cutText = document.getElementById('cut-text');
-    const newText = document.getElementById('new-text');
+# Button to trigger the title change
+st.button("Change Title", on_click=toggle_title)
 
-    // Start the animation
-    setTimeout(() => {
-        cutText.classList.add('change');
-        newText.classList.add('show');
-    }, 100); // Start the animation after a short delay
-    </script>
-""", unsafe_allow_html=True)
-
+# Display the title based on the session state
+if st.session_state.title_changed:
+    st.markdown("<h1 style='text-align: center;'>Hobby Projects</h1>", unsafe_allow_html=True)
+else:
+    st.markdown("<h1 style='text-align: center;'>Data Analytics Portfolio</h1>", unsafe_allow_html=True)
 
 
 # Define columns
