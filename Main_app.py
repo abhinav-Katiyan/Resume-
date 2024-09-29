@@ -21,8 +21,8 @@ col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
 # Content for the left column
 with col1:
+    st,subheader("**Hello! I'm Abhinav Sharma**",divider='rainbow')
     st.write("""
-    **Hello! I'm Abhinav Sharma**  
     I'm a student passionate about data, aiming to become a skilled Data Analyst. I love transforming raw data into meaningful insights through data visualization, statistical analysis, and problem-solving.
     
     Explore my portfolio to discover my projects and the tools and techniques I'm utilizing!
