@@ -21,12 +21,12 @@ col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
 # Content for the left column
 with col1:
-    st.write("""
-    **Hello! I'm Abhinav Sharma**  
-    I'm a student passionate about data, aiming to become a skilled Data Analyst. I love transforming raw data into meaningful insights through data visualization, statistical analysis, and problem-solving.
+    st.subherader("""
+    **Hello! I'm Abhinav Sharma** ) 
+    st.write("I'm a student passionate about data, aiming to become a skilled Data Analyst. I love transforming raw data into meaningful insights through data visualization, statistical analysis, and problem-solving.
     
     Explore my portfolio to discover my projects and the tools and techniques I'm utilizing!
-    """)
+    "")
 
     # Display buttons for external links
     display_button(resume_url, "Resume")
@@ -156,5 +156,4 @@ for i in range(0, len(skills), 3):
     for j, skill in enumerate(skills[i:i + 3]):
         cols[j].button(skill)
 
-# Footer Section
-st.markdown("<h6 style='text-align: center;'>© 2024 Abhinav Sharma. All Rights Reserved.</h6>", unsafe_allow_html=True)
+
