@@ -4,20 +4,53 @@ import streamlit as st
 import streamlit as st
 import time
 
-# Set page configuration
-st.set_page_config(page_title="Welcome to My Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
+import streamlit as st
 
-# Create a placeholder for the title
-title_placeholder = st.empty()
+# Set initial page configuration
+st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
 
-# Initial title
-title_placeholder.title("Data Analytics Portfolio")
+# Custom HTML and CSS for the animation effect
+st.markdown("""
+    <style>
+    .cut-text {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: width 0.5s ease;
+        width: 200px; /* Adjust based on the original title's width */
+    }
+    .cut-text.change {
+        width: 0; /* Cut to 0 width */
+    }
+    .new-text {
+        display: inline-block;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .new-text.show {
+        opacity: 1;
+    }
+    </style>
 
-# Wait for 2 seconds
-time.sleep(2)
+    <div>
+        <h1 id="dynamic-title">
+            <span class="cut-text" id="cut-text">Data Analytics Portfolio</span>
+            <span class="new-text" id="new-text">Hobby Projects</span>
+        </h1>
+    </div>
 
-# Update the title
-title_placeholder.title("Hobby Projects")
+    <script>
+    const cutText = document.getElementById('cut-text');
+    const newText = document.getElementById('new-text');
+
+    // Start the animation
+    setTimeout(() => {
+        cutText.classList.add('change');
+        newText.classList.add('show');
+    }, 100); // Start the animation after a short delay
+    </script>
+""", unsafe_allow_html=True)
+
 
 
 # Define columns
