@@ -41,20 +41,21 @@ with body:
             unsafe_allow_html=True
         )
 
-    # Overview Section
-    st.subheader("Overview of My Data Science Expertise", divider='rainbow')
+   # Overview Section
+    st.subheader("Overview of My Data Analytics and Data Science Expertise", divider='rainbow')
     st.write("""
-    With a solid foundation in data analysis and machine learning, I bring a comprehensive skill set that spans various facets of data science. My expertise includes:
-
-    - **Exploratory Data Analysis (EDA):** Uncovering hidden insights from data to inform strategic decisions.
-    - **Predictive Modeling:** Building models that forecast future trends and business outcomes.
-    - **Data Visualization:** Crafting intuitive dashboards and visualizations using tools like Power BI to communicate data-driven insights.
-    - **Statistical Analysis:** Applying advanced statistical techniques to analyze data and derive actionable insights.
-    - **Natural Language Processing (NLP):** Developing applications for sentiment analysis and text classification using state-of-the-art models like DistilBERT.
-    - **Machine Learning:** Designing and implementing algorithms to solve complex problems, optimize processes, and enhance decision-making.
-
-    I frequently utilize a diverse set of tools and technologies, including Python, SQL, Power BI, and various machine learning libraries like Pandas, NumPy, and Scikit-learn. My projects and work experience demonstrate a track record of driving meaningful business outcomes through data-driven strategies.
+    With a strong background in data analytics and data science, I offer a diverse set of skills across both domains. My expertise includes:
+    
+    - **Exploratory Data Analysis (EDA):** Discovering meaningful patterns and insights in data to guide business strategy.
+    - **Predictive Modeling:** Developing accurate models that predict trends and optimize business decisions.
+    - **Data Visualization:** Creating dynamic, user-friendly dashboards and visualizations using Power BI and Python to present actionable insights.
+    - **Statistical Analysis:** Leveraging statistical methods to analyze datasets and extract key insights that drive decision-making.
+    - **Natural Language Processing (NLP):** Implementing NLP techniques for tasks such as sentiment analysis, text classification, and entity recognition.
+    - **Machine Learning:** Crafting machine learning solutions for classification, regression, and clustering problems to improve business efficiency and outcomes.
+    
+    I work with a range of technologies, including Python, SQL, Power BI, and key libraries such as Pandas, NumPy, and Scikit-learn. My work consistently demonstrates the ability to translate complex data into valuable insights that inform business decisions.
     """)
+
 
     # Project Demonstrations
     st.subheader("Project Demonstrations", divider='rainbow')
@@ -122,6 +123,27 @@ with body:
         - **Net Profit %**: Indicates the percentage of revenue that remains as profit after all expenses have been deducted.
         - **Market Share %**: Reflects Atliq's share of the overall market within its industry.
         - **By Fiscal Year**: The data is segmented by fiscal years to observe annual trends and performance.
+        """)
+
+    with st.expander("Credit Card Analysis ", expanded=True):
+        st.write("Another insightful Power BI report showcasing additional analyses.")
+        
+        # Embedding the Power BI report using iframe
+        st.markdown("""
+            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNDY0YTQ2YjQtMzc4Ny00NmVlLWE2N2YtMmUzMzYwYjVmYzkxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+            """, unsafe_allow_html=True)
+        
+        # Detailed report analysis with key points
+        st.write("""
+        **# Credit Card Analysis: Key Insights Overview  
+        *Technologies: Power BI*  
+
+        - **Age, Gender, and Income Groups:** Analysis focuses on identifying key spending patterns across different demographics.
+        - **Spending Patterns:** Highlights how various groups utilize their credit cards, including high and low spenders.
+        - **Potential for Improvement:** Insights into opportunities for enhancing credit card usage by targeted age, gender, and income segments.
+        - **By Demographic Segmentation:** The data is segmented by demographics to uncover trends and potential areas for increased engagement.
+
         """)
 
     # Skills Section
