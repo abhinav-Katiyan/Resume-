@@ -1,33 +1,22 @@
 import streamlit as st
 
-# Set page configuration
 import streamlit as st
 import time
-
-import streamlit as st
-
-import streamlit as st
 
 # Set the initial page configuration
 st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
 
-# Create a session state variable to toggle between titles
-if 'title_changed' not in st.session_state:
-    st.session_state.title_changed = False
-
-# Function to toggle the title
-def toggle_title():
-    st.session_state.title_changed = not st.session_state.title_changed
-
-# Button to trigger the title change
-st.button("Change Title", on_click=toggle_title)
-
-# Display the title based on the session state
-if st.session_state.title_changed:
-    st.markdown("<h1 style='text-align: center;'>Hobby Projects</h1>", unsafe_allow_html=True)
-else:
+# Function to update the title
+def update_title():
+    # Display the initial title
     st.markdown("<h1 style='text-align: center;'>Data Analytics Portfolio</h1>", unsafe_allow_html=True)
+    time.sleep(2)  # Pause for 2 seconds
+    # Clear the output and display the new title
+    st.empty()
+    st.markdown("<h1 style='text-align: center;'>Hobby Projects</h1>", unsafe_allow_html=True)
 
+# Call the function to change the title
+update_title()
 
 # Define columns
 margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
