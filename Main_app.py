@@ -1,7 +1,24 @@
 import streamlit as st
 
 # Set page configuration
+import streamlit as st
+import time
+
+# Set page configuration
 st.set_page_config(page_title="Welcome to My Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
+
+# Create a placeholder for the title
+title_placeholder = st.empty()
+
+# Initial title
+title_placeholder.title("Data Analytics Portfolio")
+
+# Wait for 2 seconds
+time.sleep(2)
+
+# Update the title
+title_placeholder.title("Hobby Projects")
+
 
 # Define columns
 margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
@@ -73,6 +90,7 @@ with body:
 
         - **Data Analysis and Trend Identification:** Analyzed GDP, population, FDI, and inflation data using Pandas, identifying and reporting five key economic trends of 2022. These insights supported strategic investment decisions and informed policy recommendations.
         """)
+        st.write("After building a hard-coded Kaggle notebook in May 2024, I wanted to explore real-time data access as a hobby. I developed a web app that leverages the World Bank API to gather live economic data from various countries, including GDP, inflation, and population. This app allows users to easily analyze and compare key economic indicators, automating data collection and making it fun to explore trends and patterns")
 
         # GitHub button
         st.markdown('<a href="https://github.com/abhinav-Katiyan/Economic-and-Population-Comparison-Tool" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
