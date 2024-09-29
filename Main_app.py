@@ -1,168 +1,160 @@
-    import streamlit as st
-    
-    # Set the initial page configuration
-    st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
-    
-    # Define columns
-    margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
-    
-    # Define URLs for buttons
-    resume_url = "https://drive.google.com/file/d/1IFtuPv36fZb0AI9j3Rt9Argh9vEuzwem/view?usp=sharing"
-    linkedin_url = "https://linkedin.com/in/abhinav-sharma-work21/"
-    github_url = "https://github.com/abhinav-Katiyan"
-    kaggle_url = "https://www.kaggle.com/abhinavkatiyan"
-    
-    # Button display function using Streamlit native buttons
-    def display_button(url, text):
-        st.markdown(f'<a href="{url}" target="_blank" class="button">{text}</a>', unsafe_allow_html=True)
-    
-    # Define columns for layout
-    col1, col2, col3 = st.columns([1.3, 0.2, 1])
+import streamlit as st
 
+# Set the initial page configuration
+st.set_page_config(page_title="Hobby Projects Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
 
-    with col1:
-        st.write("""
-        Hi there! I'm Abhinav Sharma, a student with a passion for data and a goal to become a skilled Data Analyst. I enjoy turning raw data into meaningful insights and working with data visualization, statistical analysis, and problem-solving.
+# Define columns for layout
+margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
 
-        Take a look at my portfolio to explore some of my projects and learn more about the tools and techniques I'm using along the way!
-        """)
+# Define URLs for buttons
+resume_url = "https://drive.google.com/file/d/1IFtuPv36fZb0AI9j3Rt9Argh9vEuzwem/view?usp=sharing"
+linkedin_url = "https://linkedin.com/in/abhinav-sharma-work21/"
+github_url = "https://github.com/abhinav-Katiyan"
+kaggle_url = "https://www.kaggle.com/abhinavkatiyan"
 
+# Button display function
+def display_button(url, text):
+    st.markdown(f'<a href="{url}" target="_blank" class="button">{text}</a>', unsafe_allow_html=True)
 
-        # Display buttons using Streamlit native buttons
-        display_button(resume_url, "Resume")
-        display_button(linkedin_url, "LinkedIn")
-        display_button(github_url, "GitHub")
-        display_button(kaggle_url, "Kaggle")
+# Layout for the main content
+col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
-    with col3:
-        st.markdown(
-            '<img src="https://storage.googleapis.com/kaggle-avatars/images/12609714-kg.jpg?t=2024-06-07-13-10-03&quot" class="profile-photo" width="360">', 
-            unsafe_allow_html=True
-        )
-
-   # Overview Section
-    st.subheader("Overview of My Data Analytics and Data Science Expertise", divider='rainbow')
+# Content for the left column
+with col1:
     st.write("""
-    With a strong background in data analytics and data science, I offer a diverse set of skills across both domains. My expertise includes:
+    **Hello! I'm Abhinav Sharma**  
+    I'm a student passionate about data, aiming to become a skilled Data Analyst. I love transforming raw data into meaningful insights through data visualization, statistical analysis, and problem-solving.
     
-    - **Exploratory Data Analysis (EDA):** Discovering meaningful patterns and insights in data to guide business strategy.
-    - **Predictive Modeling:** Developing accurate models that predict trends and optimize business decisions.
-    - **Data Visualization:** Creating dynamic, user-friendly dashboards and visualizations using Power BI and Python to present actionable insights.
-    - **Statistical Analysis:** Leveraging statistical methods to analyze datasets and extract key insights that drive decision-making.
-    - **Natural Language Processing (NLP):** Implementing NLP techniques for tasks such as sentiment analysis, text classification, and entity recognition.
-    - **Machine Learning:** Crafting machine learning solutions for classification, regression, and clustering problems to improve business efficiency and outcomes.
-    
-    I work with a range of technologies, including Python, SQL, Power BI, and key libraries such as Pandas, NumPy, and Scikit-learn. My work consistently demonstrates the ability to translate complex data into valuable insights that inform business decisions.
+    Explore my portfolio to discover my projects and the tools and techniques I'm utilizing!
     """)
 
+    # Display buttons for external links
+    display_button(resume_url, "Resume")
+    display_button(linkedin_url, "LinkedIn")
+    display_button(github_url, "GitHub")
+    display_button(kaggle_url, "Kaggle")
 
-    # Project Demonstrations
-    st.subheader("Project Demonstrations", divider='rainbow')
+# Content for the right column
+with col3:
+    st.markdown(
+        '<img src="https://storage.googleapis.com/kaggle-avatars/images/12609714-kg.jpg?t=2024-06-07-13-10-03" class="profile-photo" width="360">',
+        unsafe_allow_html=True
+    )
 
-    with st.expander("Global Economic and Population EDA", expanded=True):
-        st.write("This video demonstrates the Exploratory Data Analysis process.")
-        st.write("Created a web app that pulls real-time data from the World Bank API, allowing users to analyze economic indicators like GDP, inflation, and population across different countries.")
-        st.video("EDA(1).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
-        st.write("""
-        **Global Economic and Population Metrics Analyzer**  
-        *Technologies: Pandas, NumPy, Matplotlib*  
+# Overview Section
+st.subheader("Overview of My Data Analytics Expertise", divider='rainbow')
+st.write("""
+With a solid background in data analytics, I possess a diverse skill set including:
 
-        - **Automated Data Collection:** Constructed an automated solution using Python to gather economic indicators of BRICS nations from the World Bank API, saving the research team over 30 hours per month in manual data handling.
+- **Exploratory Data Analysis (EDA):** Discovering meaningful patterns to guide business strategy.
+- **Predictive Modeling:** Developing accurate models for predicting trends and optimizing decisions.
+- **Data Visualization:** Creating user-friendly dashboards with Power BI and Python for actionable insights.
+- **Statistical Analysis:** Leveraging methods to analyze datasets and extract insights for decision-making.
+- **Natural Language Processing (NLP):** Implementing techniques for sentiment analysis and text classification.
+- **Machine Learning:** Crafting solutions for classification, regression, and clustering problems to improve efficiency.
 
-        - **Data Analysis and Trend Identification:** Analyzed GDP, population, FDI, and inflation data using Pandas, identifying and reporting five key economic trends of 2022. These insights supported strategic investment decisions and informed policy recommendations.
-        """)
-        st.write("After building a hard-coded Kaggle notebook in May 2024, I wanted to explore real-time data access as a hobby. I developed a web app that leverages the World Bank API to gather live economic data from various countries, including GDP, inflation, and population. This app allows users to easily analyze and compare key economic indicators, automating data collection and making it fun to explore trends and patterns")
+I work with technologies like Python, SQL, Power BI, and key libraries such as Pandas, NumPy, and Scikit-learn, consistently translating complex data into valuable insights.
+""")
 
-        # GitHub button
-        st.markdown('<a href="https://github.com/abhinav-Katiyan/Economic-and-Population-Comparison-Tool" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
+# Project Demonstrations
+st.subheader("Project Demonstrations", divider='rainbow')
 
-        # Web App button
-        st.markdown('<a href="https://economic-and-population-comparison-tool.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
+with st.expander("Global Economic and Population EDA", expanded=True):
+    st.write("This video demonstrates the Exploratory Data Analysis process.")
+    st.write("Created a web app that pulls real-time data from the World Bank API, allowing users to analyze economic indicators like GDP, inflation, and population across different countries.")
+    st.video("EDA(1).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
 
-    with st.expander("Sentiment Analysis Web App", expanded=True):
-        st.write(
-        "I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
-        
-        # Displaying video in the app
-        st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
-        
-        # Description of the project
-        st.write("""
-        **Sentiment Analysis Web App Project**  
-        *Technologies & Model: NLP, Python DistilBERT*
+    st.write("""
+    **Global Economic and Population Metrics Analyzer**  
+    *Technologies: Pandas, NumPy, Matplotlib*  
 
-        - **Sentiment Analysis:** Developed a web app that performs sentiment analysis on user-input text and CSV files. The app analyzes the sentiment of the text and identifies the most frequently repeated words, providing valuable insights into user opinions and trends.
+    - **Automated Data Collection:** Developed a solution to gather economic indicators of BRICS nations from the World Bank API, saving the research team over 30 hours per month.
+    - **Data Analysis and Trend Identification:** Analyzed GDP, population, FDI, and inflation data, identifying five key economic trends of 2022 to support investment decisions.
+    """)
+    
+    st.write("""
+    After building a hard-coded Kaggle notebook in May 2024, I sought to explore real-time data access as a hobby. Thus, I developed this web app that utilizes the World Bank API to gather live economic data from various countries. It allows users to easily analyze and compare key economic indicators, automating data collection and making it enjoyable to explore trends.
+    """)
 
-        - **Model Customization:** Customized and trained the DistilBERT model for sentiment analysis, leading to a 30% improvement in detecting customer satisfaction levels, which informed strategic decisions for product enhancements.
+    # GitHub and Web App buttons
+    st.markdown('<a href="https://github.com/abhinav-Katiyan/Economic-and-Population-Comparison-Tool" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://economic-and-population-comparison-tool.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
 
-        - **Text Classification:** Engineered a text classification feature utilizing advanced sentiment analysis techniques, achieving a 95% accuracy rate in categorizing user feedback, thereby streamlining the review process.
-        """)
+with st.expander("Sentiment Analysis Web App", expanded=True):
+    st.write("I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
+    
+    # Displaying video in the app
+    st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
+    
+    # Description of the project
+    st.write("""
+    **Sentiment Analysis Web App Project**  
+    *Technologies & Model: NLP, Python DistilBERT*
 
-        # GitHub and Web App buttons
-        st.markdown('<a href="https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
-        st.markdown('<a href="https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
+    - **Sentiment Analysis:** Developed a web app that performs sentiment analysis on user-input text and CSV files, identifying trends in user opinions.
+    - **Model Customization:** Customized the DistilBERT model, achieving a 30% improvement in detecting customer satisfaction levels.
+    - **Text Classification:** Engineered a feature for classifying user feedback, achieving a 95% accuracy rate.
+    """)
 
-    # Power BI Report Section
-    st.subheader("Power BI Reports", divider='rainbow')
+    # GitHub and Web App buttons
+    st.markdown('<a href="https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
 
-    with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
-        st.write("Detailed Power BI report highlighting Atliq's financial performance with key insights and trends.")
+# Power BI Report Section
+st.subheader("Power BI Reports", divider='rainbow')
+
+with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
+    st.write("Detailed Power BI report highlighting Atliq's financial performance with key insights and trends.")
 
     # Embedding the Power BI report using iframe
-        st.markdown("""
-            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-            """, unsafe_allow_html=True)
+    st.markdown("""
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+        """, unsafe_allow_html=True)
 
-    # Detailed report analysis with key points
-        st.write("""
-        **Atliq Financial Performance: Key Metrics Overview**  
-        *Technologies: Power BI*  
-    
-        - **Net Sales**: Total revenue generated before deducting expenses.
-        - **Gross Margin %**: Profitability measure showing the percentage of sales revenue remaining after covering production costs.
-        - **Net Profit %**: Percentage of revenue left as profit after all expenses.
-        - **Market Share %**: Atliq's industry market share percentage.
-        - **By Fiscal Year**: Data segmented by fiscal years to identify trends and performance over time.
-        """)
-
-    with st.expander("Credit Card Analysis ", expanded=True):
-        st.write("Comprehensive Power BI Dashboard Unveiling Key Insights on Credit Card Usage Patterns and Opportunities for Optimization")
-        
-        # Embedding the Power BI report using iframe
-        st.markdown("""
-            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNDY0YTQ2YjQtMzc4Ny00NmVlLWE2N2YtMmUzMzYwYjVmYzkxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
-                    width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-            """, unsafe_allow_html=True)
-        
-        # Detailed report analysis with key points
-        st.write("""
-        **# Credit Card Analysis: Key Insights Overview  
-        *Technologies: Power BI*  
-
-        - **Age, Gender, and Income Groups:** Analysis focuses on identifying key spending patterns across different demographics.
-        - **Spending Patterns:** Highlights how various groups utilize their credit cards, including high and low spenders.
-        - **Potential for Improvement:** Insights into opportunities for enhancing credit card usage by targeted age, gender, and income segments.
-        - **By Demographic Segmentation:** The data is segmented by demographics to uncover trends and potential areas for increased engagement.
-
-        """)
-
-    # Skills Section
-    st.subheader("Skills & Expertise", divider='rainbow')
-
-    skills = [
-        "SQL", "Python", "Power BI", "Excel", "Machine Learning",
-        "Microsoft Fabric", "NLP", "Pandas", "NumPy", "Financial Modeling", "Plotly"
-    ]
-
-    for i in range(0, len(skills), 3):
-        cols = st.columns(3)
-        for j in range(3):
-            if i + j < len(skills):
-                cols[j].button(skills[i + j])
-
-    st.subheader("Contact", divider='rainbow')
     st.write("""
-    **Email:** abhinavkatiyan21@gmail.com  
-    **Contact:** +91 6388845388
+    **Atliq Financial Performance: Key Metrics Overview**  
+    *Technologies: Power BI*  
+
+    - **Net Sales**: Total revenue before deducting expenses.
+    - **Gross Margin %**: Profitability measure indicating sales revenue remaining after production costs.
+    - **Net Profit %**: Percentage of revenue left as profit after expenses.
+    - **Market Share %**: Atliq's market share percentage in the industry.
+    - **By Fiscal Year**: Data segmented by fiscal years to identify trends over time.
     """)
+
+with st.expander("Credit Card Analysis ", expanded=True):
+    st.write("Comprehensive Power BI Dashboard Unveiling Key Insights on Credit Card Usage Patterns and Opportunities for Optimization")
+    
+    # Embedding the Power BI report using iframe
+    st.markdown("""
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNDY0YTQ2YjQtMzc4Ny00NmVlLWE2N2YtMmUzMzYwYjVmYzkxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+                width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+        """, unsafe_allow_html=True)
+
+    st.write("""
+    **Credit Card Analysis: Key Insights Overview**  
+    *Technologies: Power BI*  
+
+    - **Age, Gender, and Income Groups:** Analysis of spending patterns across demographics.
+    - **Spending Patterns:** Insights on credit card usage among various groups.
+    - **Potential for Improvement:** Opportunities to enhance credit card usage by targeting demographics.
+    - **By Demographic Segmentation:** Data segmented by demographics to uncover trends and engagement opportunities.
+    """)
+
+# Skills Section
+st.subheader("Skills & Expertise", divider='rainbow')
+
+skills = [
+    "SQL", "Python", "Power BI", "Excel", "Machine Learning",
+    "Microsoft Fabric", "NLP", "Pandas", "NumPy", "Financial Modeling", "Plotly"
+]
+
+# Displaying skills in buttons
+for i in range(0, len(skills), 3):
+    cols = st.columns(3)
+    for j, skill in enumerate(skills[i:i + 3]):
+        cols[j].button(skill)
+
+# Footer Section
+st.markdown("<h6 style='text-align: center;'>© 2024 Abhinav Sharma. All Rights Reserved.</h6>", unsafe_allow_html=True)
