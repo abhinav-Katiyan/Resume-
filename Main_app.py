@@ -1,22 +1,8 @@
 import streamlit as st
 
-import streamlit as st
-import time
-
 # Set the initial page configuration
 st.set_page_config(page_title="Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
 
-# Function to update the title
-def update_title():
-    # Display the initial title
-    st.markdown("<h1 style='text-align: center;'>Data Analytics Portfolio</h1>", unsafe_allow_html=True)
-    time.sleep(2)  # Pause for 2 seconds
-    # Clear the output and display the new title
-    st.empty()
-    st.markdown("<h1 style='text-align: center;'>Hobby Projects</h1>", unsafe_allow_html=True)
-
-# Call the function to change the title
-update_title()
 
 # Define columns
 margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
@@ -33,7 +19,12 @@ def display_button(url, text):
 
 with body:
     # Home Section
-    st.header("Welcome to My Data Science Portfolio", divider='rainbow')
+    st.markdown("""
+    <h1 style="text-align: center; color: #2e8b57; font-family: 'Arial'; font-size: 3.5em; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);">
+        🌟 Welcome to My <span style="color: #ffa07a; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Hobby Projects</span> Portfolio 🌟
+    </h1>
+""", unsafe_allow_html=True)
+
 
     col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
