@@ -25,9 +25,9 @@ with col3:
         """
         <style>
             .profile-photo {
-                border-radius: 50%;  /* Makes the image round */
-                width: 360px;        /* Set the width */
-                height: 360px;       /* Set the height to maintain the aspect ratio */
+                border-radius: 50%; 
+                width: 360px;        
+                height: 360px;      
             }
         </style>
         <img src="https://media.licdn.com/dms/image/v2/D5603AQGxfctLmE8DQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727202726874?e=1733356800&v=beta&t=fdzeagmU8UQNrmWtvTNu3zyKWDPuAmbp3nTr49nUkGk" class="profile-photo">
@@ -43,12 +43,12 @@ with col3:
     display_button(github_url, "GitHub")
     display_button(kaggle_url, "Kaggle")
 
-# Content for the right column
-with col3:
-    st.markdown(
-        '<img src="https://media.licdn.com/dms/image/v2/D5603AQGxfctLmE8DQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727202726874?e=1733356800&v=beta&t=fdzeagmU8UQNrmWtvTNu3zyKWDPuAmbp3nTr49nUkGk" class="profile-photo" width="360">',
-        unsafe_allow_html=True
-    )
+# # Content for the right column
+# with col3:
+#     st.markdown(
+#         '<img src="https://media.licdn.com/dms/image/v2/D5603AQGxfctLmE8DQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727202726874?e=1733356800&v=beta&t=fdzeagmU8UQNrmWtvTNu3zyKWDPuAmbp3nTr49nUkGk" class="profile-photo" width="360">',
+#         unsafe_allow_html=True
+#     )
 
 # Overview Section
 st.subheader("Overview of My Data Analytics Expertise", divider='rainbow')
