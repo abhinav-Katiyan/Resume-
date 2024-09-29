@@ -17,16 +17,7 @@ kaggle_url = "https://www.kaggle.com/abhinavkatiyan"
 def display_button(url, text):
     st.markdown(f'<a href="{url}" target="_blank" class="button">{text}</a>', unsafe_allow_html=True)
 
-with body:
-    # Home Section
-    st.markdown("""
-    <h1 style="text-align: center; color: #2e8b57; font-family: 'Arial'; font-size: 3.5em; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);">
-        🌟 Welcome to My <span style="color: #ffa07a; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Hobby Projects</span> Portfolio 🌟
-    </h1>
-""", unsafe_allow_html=True)
-
-
-    col1, col2, col3 = st.columns([1.3, 0.2, 1])
+     col1, col2, col3 = st.columns([1.3, 0.2, 1])
 
     with col1:
         st.write("""
