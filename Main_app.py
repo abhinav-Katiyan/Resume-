@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page configuration
-st.set_page_config(page_title="My Data Science Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Welcome to My Data Analytics Portfolio", page_icon="🕸️", layout="wide", initial_sidebar_state="collapsed")
 
 # Define columns
 margin_r, body, margin_l = st.columns([0.4, 3, 0.4])
@@ -63,6 +63,7 @@ with body:
 
     with st.expander("Global Economic and Population EDA", expanded=True):
         st.write("This video demonstrates the Exploratory Data Analysis process.")
+        st.write("Created a web app that pulls real-time data from the World Bank API, allowing users to analyze economic indicators like GDP, inflation, and population across different countries.")
         st.video("EDA(1).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
         st.write("""
         **Global Economic and Population Metrics Analyzer**  
