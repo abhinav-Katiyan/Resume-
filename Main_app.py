@@ -38,7 +38,7 @@ with col1:
 # Content for the right column
 with col3:
     st.markdown(
-        '<img src="https://storage.googleapis.com/kaggle-avatars/images/12609714-kg.jpg?t=2024-06-07-13-10-03" class="profile-photo" width="360">',
+        '<img src="https://media.licdn.com/dms/image/v2/D5603AQGxfctLmE8DQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727202726874?e=1733356800&v=beta&t=fdzeagmU8UQNrmWtvTNu3zyKWDPuAmbp3nTr49nUkGk" class="profile-photo" width="360">',
         unsafe_allow_html=True
     )
 
