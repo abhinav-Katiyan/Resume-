@@ -123,24 +123,29 @@ with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
     - **By Fiscal Year**: Data segmented by fiscal years to identify trends over time.
     """)
 
-with st.expander("Credit Card Analysis ", expanded=True):
-    st.write("Comprehensive Power BI Dashboard Unveiling Key Insights on Credit Card Usage Patterns and Opportunities for Optimization")
+with st.expander("Swiggy Order Analysis", expanded=True):
+    st.write("In-Depth Power BI Dashboard: Uncovering Key Swiggy Order Insights and Optimization Opportunities")
     
     # Embedding the Power BI report using iframe
     st.markdown("""
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNDY0YTQ2YjQtMzc4Ny00NmVlLWE2N2YtMmUzMzYwYjVmYzkxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZGYwMTE5YzYtNjY4My00ZDQyLTk2OWEtNzdiM2MzMWQxMWM1IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
                 width="100%" height="450" frameborder="0" allowfullscreen></iframe>
         """, unsafe_allow_html=True)
 
-    st.write("""
-    **Credit Card Analysis: Key Insights Overview**  
+   st.write("""
+    **Swiggy Order Analysis: Key Insights Overview**  
     *Technologies: Power BI*  
 
-    - **Age, Gender, and Income Groups:** Analysis of spending patterns across demographics.
-    - **Spending Patterns:** Insights on credit card usage among various groups.
-    - **Potential for Improvement:** Opportunities to enhance credit card usage by targeting demographics.
-    - **By Demographic Segmentation:** Data segmented by demographics to uncover trends and engagement opportunities.
-    """)
+    - **Total Revenue and Monthly Revenue Comparison:** KPIs highlight the current month's revenue against the previous month, identifying trends in sales performance.
+    - **Order Metrics:** Visualizations of total orders processed, providing insights into order frequency and customer engagement.
+    - **Cuisine Performance:** Analysis of revenue and orders by cuisine type, offering insights into customer preferences for operational planning.
+    - **Weekday vs. Weekend Analysis:** A pie chart distinguishes revenue and orders by weekday vs. weekend, aiding in identifying peak business hours.
+    - **Customer Lifetime Value (CLV):** Insights on long-term profitability and strategies for customer retention.
+    - **Peak Order Times:** Understanding peak order hours helps optimize delivery efficiency and marketing efforts.
+
+    This Power BI project supports data-driven decisions for improved business performance and growth.
+""")
+
 
 # Skills Section
 st.subheader("Skills & Expertise", divider='rainbow')
