@@ -132,19 +132,19 @@ with st.expander("Swiggy Order Analysis", expanded=True):
                 width="100%" height="450" frameborder="0" allowfullscreen></iframe>
         """, unsafe_allow_html=True)
 
-   st.write("""
-    **Swiggy Order Analysis: Key Insights Overview**  
-    *Technologies: Power BI*  
-
-    - **Total Revenue and Monthly Revenue Comparison:** KPIs highlight the current month's revenue against the previous month, identifying trends in sales performance.
-    - **Order Metrics:** Visualizations of total orders processed, providing insights into order frequency and customer engagement.
-    - **Cuisine Performance:** Analysis of revenue and orders by cuisine type, offering insights into customer preferences for operational planning.
-    - **Weekday vs. Weekend Analysis:** A pie chart distinguishes revenue and orders by weekday vs. weekend, aiding in identifying peak business hours.
-    - **Customer Lifetime Value (CLV):** Insights on long-term profitability and strategies for customer retention.
-    - **Peak Order Times:** Understanding peak order hours helps optimize delivery efficiency and marketing efforts.
-
-    This Power BI project supports data-driven decisions for improved business performance and growth.
-""")
+    st.write("""
+        **Swiggy Order Analysis: Key Insights Overview**  
+        *Technologies: Power BI*  
+    
+        - **Total Revenue and Monthly Revenue Comparison:** KPIs highlight the current month's revenue against the previous month, identifying trends in sales performance.
+        - **Order Metrics:** Visualizations of total orders processed, providing insights into order frequency and customer engagement.
+        - **Cuisine Performance:** Analysis of revenue and orders by cuisine type, offering insights into customer preferences for operational planning.
+        - **Weekday vs. Weekend Analysis:** A pie chart distinguishes revenue and orders by weekday vs. weekend, aiding in identifying peak business hours.
+        - **Customer Lifetime Value (CLV):** Insights on long-term profitability and strategies for customer retention.
+        - **Peak Order Times:** Understanding peak order hours helps optimize delivery efficiency and marketing efforts.
+    
+        This Power BI project supports data-driven decisions for improved business performance and growth.
+    """)
 
 
 # Skills Section
