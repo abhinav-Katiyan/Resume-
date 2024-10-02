@@ -108,7 +108,7 @@ with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
 
     # Embedding the Power BI report using iframe
     st.markdown("""
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2EwZDYxYmMtNDA1Zi00MTE5LWFmMWUtNjQ4OTE1YmY2NDQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMmJhYzhkMWYtZDgyZS00NTg0LWEzMjItZmI1ZTUxMmNkNWI3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
                 width="100%" height="450" frameborder="0" allowfullscreen></iframe>
         """, unsafe_allow_html=True)
 
