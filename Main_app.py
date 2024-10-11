@@ -57,50 +57,6 @@ I work with technologies like Python, SQL, Power BI, and key libraries such as P
 """)
 
 # Project Demonstrations
-st.subheader("Project Demonstrations", divider='rainbow')
-
-with st.expander("Global Economic and Population EDA", expanded=True):
-    st.write("This video demonstrates the Exploratory Data Analysis process.")
-    st.write("Created a web app that pulls real-time data from the World Bank API, allowing users to analyze economic indicators like GDP, inflation, and population across different countries.")
-    st.video("EDA(1).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
-
-    st.write("""
-    **Global Economic and Population Metrics Analyzer**  
-    *Technologies: Pandas, NumPy, Matplotlib*  
-
-    - **Automated Data Collection:** Developed a solution to gather economic indicators of BRICS nations from the World Bank API, saving the research team over 30 hours per month.
-    - **Data Analysis and Trend Identification:** Analyzed GDP, population, FDI, and inflation data, identifying five key economic trends of 2022 to support investment decisions.
-    """)
-    
-    st.write("""
-    After building a hard-coded Kaggle notebook in May 2024, I sought to explore real-time data access as a hobby. Thus, I developed this web app that utilizes the World Bank API to gather live economic data from various countries. It allows users to easily analyze and compare key economic indicators, automating data collection and making it enjoyable to explore trends.
-    """)
-
-    # GitHub and Web App buttons
-    st.markdown('<a href="https://github.com/abhinav-Katiyan/Economic-and-Population-Comparison-Tool" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
-    st.markdown('<a href="https://economic-and-population-comparison-tool.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
-
-with st.expander("Sentiment Analysis Web App", expanded=True):
-    st.write("I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
-    
-    # Displaying video in the app
-    st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
-    
-    # Description of the project
-    st.write("""
-    **Sentiment Analysis Web App Project**  
-    *Technologies & Model: NLP, Python DistilBERT*
-
-    - **Sentiment Analysis:** Developed a web app that performs sentiment analysis on user-input text and CSV files, identifying trends in user opinions.
-    - **Model Customization:** Customized the DistilBERT model, achieving a 30% improvement in detecting customer satisfaction levels.
-    - **Text Classification:** Engineered a feature for classifying user feedback, achieving a 95% accuracy rate.
-    """)
-
-    # GitHub and Web App buttons
-    st.markdown('<a href="https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
-    st.markdown('<a href="https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
-
-# Power BI Report Section
 st.subheader("Power BI Reports", divider='rainbow')
 
 with st.expander("In-Depth Analysis: Atliq Financial Overview", expanded=True):
@@ -145,6 +101,51 @@ with st.expander("Swiggy Order Analysis", expanded=True):
     
         This Power BI project supports data-driven decisions for improved business performance and growth.
     """)
+
+st.subheader("Project Demonstrations", divider='rainbow')
+
+with st.expander("Global Economic and Population EDA", expanded=True):
+    st.write("This video demonstrates the Exploratory Data Analysis process.")
+    st.write("Created a web app that pulls real-time data from the World Bank API, allowing users to analyze economic indicators like GDP, inflation, and population across different countries.")
+    st.video("EDA(1).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
+
+    st.write("""
+    **Global Economic and Population Metrics Analyzer**  
+    *Technologies: Pandas, NumPy, Matplotlib*  
+
+    - **Automated Data Collection:** Developed a solution to gather economic indicators of BRICS nations from the World Bank API, saving the research team over 30 hours per month.
+    - **Data Analysis and Trend Identification:** Analyzed GDP, population, FDI, and inflation data, identifying five key economic trends of 2022 to support investment decisions.
+    """)
+    
+    st.write("""
+    After building a hard-coded Kaggle notebook in May 2024, I sought to explore real-time data access as a hobby. Thus, I developed this web app that utilizes the World Bank API to gather live economic data from various countries. It allows users to easily analyze and compare key economic indicators, automating data collection and making it enjoyable to explore trends.
+    """)
+
+    # GitHub and Web App buttons
+    st.markdown('<a href="https://github.com/abhinav-Katiyan/Economic-and-Population-Comparison-Tool" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://economic-and-population-comparison-tool.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
+
+with st.expander("Sentiment Analysis Web App", expanded=True):
+    st.write("I developed a sophisticated web application designed to perform sentiment analysis on both user-input text and CSV files.")
+    
+    # Displaying video in the app
+    st.video("EDA(2).mp4", format="mp4", start_time=0, loop=True, autoplay=True, muted=True)
+    
+    # Description of the project
+    st.write("""
+    **Sentiment Analysis Web App Project**  
+    *Technologies & Model: NLP, Python DistilBERT*
+
+    - **Sentiment Analysis:** Developed a web app that performs sentiment analysis on user-input text and CSV files, identifying trends in user opinions.
+    - **Model Customization:** Customized the DistilBERT model, achieving a 30% improvement in detecting customer satisfaction levels.
+    - **Text Classification:** Engineered a feature for classifying user feedback, achieving a 95% accuracy rate.
+    """)
+
+    # GitHub and Web App buttons
+    st.markdown('<a href="https://github.com/abhinav-Katiyan/Sentiment-Analysis-Web-App" target="_blank" class="button">GitHub</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://sentiment-analysis-by-abhinav-katiyan.streamlit.app/" target="_blank" class="button">Web App</a>', unsafe_allow_html=True)
+
+# Power BI Report Section
 
 
 # Skills Section
